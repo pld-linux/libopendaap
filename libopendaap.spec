@@ -1,5 +1,5 @@
 Summary:	Open DAAP library - connecting to audio streams using DAAP
-Summary(pl):	Biblioteka Open DAAP - ³±czenie ze strumieniami audio przy u¿yciu DAAP
+Summary(pl.UTF-8):   Biblioteka Open DAAP - Å‚Ä…czenie ze strumieniami audio przy uÅ¼yciu DAAP
 Name:		libopendaap
 Version:	0.4.0
 Release:	1
@@ -16,32 +16,32 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A library for connecting to iTunes shares and streaming audio files.
 
-%description -l pl
-Biblioteka do ³±czenia z udzia³ami iTunes oraz obs³ugi strumieni z
-plików d¼wiêkowych.
+%description -l pl.UTF-8
+Biblioteka do Å‚Ä…czenia z udziaÅ‚ami iTunes oraz obsÅ‚ugi strumieni z
+plikÃ³w dÅºwiÄ™kowych.
 
 %package devel
 Summary:	Header files for libopendaap library
-Summary(pl):	Pliki nag³ówkowe biblioteki libopendaap
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libopendaap
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libopendaap library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki libopendaap.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki libopendaap.
 
 %package static
 Summary:	Static libopendaap library
-Summary(pl):	Statyczna biblioteka libopendaap
+Summary(pl.UTF-8):   Statyczna biblioteka libopendaap
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libopendaap library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libopendaap.
 
 %prep
