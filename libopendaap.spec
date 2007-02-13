@@ -1,5 +1,5 @@
 Summary:	Open DAAP library - connecting to audio streams using DAAP
-Summary(pl.UTF-8):   Biblioteka Open DAAP - łączenie ze strumieniami audio przy użyciu DAAP
+Summary(pl.UTF-8):	Biblioteka Open DAAP - łączenie ze strumieniami audio przy użyciu DAAP
 Name:		libopendaap
 Version:	0.4.0
 Release:	1
@@ -22,7 +22,7 @@ plików dźwiękowych.
 
 %package devel
 Summary:	Header files for libopendaap library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libopendaap
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libopendaap
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -34,7 +34,7 @@ Pliki nagłówkowe biblioteki libopendaap.
 
 %package static
 Summary:	Static libopendaap library
-Summary(pl.UTF-8):   Statyczna biblioteka libopendaap
+Summary(pl.UTF-8):	Statyczna biblioteka libopendaap
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
