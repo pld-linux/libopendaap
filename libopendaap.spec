@@ -2,7 +2,7 @@ Summary:	Open DAAP library - connecting to audio streams using DAAP
 Summary(pl.UTF-8):	Biblioteka Open DAAP - łączenie ze strumieniami audio przy użyciu DAAP
 Name:		libopendaap
 Version:	0.4.0
-Release:	2
+Release:	3
 License:	BSD-like/Apple Public Source License v2.0 (see COPYING)
 Group:		Libraries
 Source0:	http://crazney.net/programs/itunes/files/%{name}-%{version}.tar.bz2
@@ -73,6 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog
 %attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/lib*.so.0
 
 %files devel
 %defattr(644,root,root,755)
