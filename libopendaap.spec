@@ -63,6 +63,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# obsoleted by pkg-config
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libopendaap.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -72,17 +75,16 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/lib*.so.0
+%attr(755,root,root) %{_libdir}/libopendaap.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libopendaap.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_mandir}/man3/lib*.3*
+%attr(755,root,root) %{_libdir}/libopendaap.so
+%{_mandir}/man3/libopendaap.3*
 %{_includedir}/daap
 %{_pkgconfigdir}/opendaap.pc
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libopendaap.a
