@@ -2,11 +2,12 @@ Summary:	Open DAAP library - connecting to audio streams using DAAP
 Summary(pl.UTF-8):	Biblioteka Open DAAP - łączenie ze strumieniami audio przy użyciu DAAP
 Name:		libopendaap
 Version:	0.4.0
-Release:	3
+Release:	4
 License:	BSD-like/Apple Public Source License v2.0 (see COPYING)
 Group:		Libraries
 Source0:	http://crazney.net/programs/itunes/files/%{name}-%{version}.tar.bz2
 # Source0-md5:	4edf92ac18c6ab8c05be7a4eb64a8a8d
+Patch0:		libopendaap-missing-includes.patch
 URL:		http://crazney.net/programs/itunes/libopendaap.html
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -46,6 +47,7 @@ Statyczna biblioteka libopendaap.
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
 # rebuild - *.m4 and ltmain.sh are desynced

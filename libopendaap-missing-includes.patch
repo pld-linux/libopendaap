@@ -1,0 +1,11 @@
+--- libopendaap-0.4.0/debug/debug.c.orig	2004-03-30 09:47:10.000000000 +0200
++++ libopendaap-0.4.0/debug/debug.c	2026-03-15 12:00:00.000000000 +0100
+@@ -25,6 +25,8 @@
+ #include <stdio.h>
+ #include <stdarg.h>
+ #include <ctype.h>
++#include <stdlib.h>
++#include <string.h>
+ #include "debug.h"
+
+ #define DEFAULT_DEBUG_CHANNEL "debug"
